@@ -4,6 +4,11 @@ require 'json'
 module ExpenseTracker
   # sinatra path
   class API < Sinatra::Base
+    def initialize(ledger: Ledger.new)
+      @ledger = ledger
+      super()
+    end
+
     post '/expenses' do
       JSON.generate('expense_id' => 42)
     end
