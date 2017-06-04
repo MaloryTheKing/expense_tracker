@@ -1,1 +1,1 @@
-* Simple App with RSpec
+* Simple App with RSpec !
